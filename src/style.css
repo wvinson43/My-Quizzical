@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #F5F7FB;
+    color: #293264;
+    min-height: 100vh;
+    height: 100%;
+    font-family: 'Karla', sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.yellow-blob{
+    padding: 8rem;
+    border-radius: 61% 39% 29% 71% / 30% 63% 37% 70%;
+    background-color: yellow;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    z-index: -1;
+}
+
+
+
+.blue-blob{
+    padding: 8rem;
+    border-radius: 61% 51% 29% 71% / 30% 63% 47% 70%;
+    background-color: lightblue;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transform: translate(-50%, 50%);
+    z-index: -1;
+}
+
+.quiz-intro{
+    margin-top: 5em;
+     /* justify-content: center; */
+    text-align: center;
+    /* gap: 1em; */
+}
+
+.quiz-begin {
+    background: #4D5B9E;
+    border-radius: 15px;
+    color: #F5F7FB;
+    padding: 1em 2em;
+    margin: 1em auto;
+    cursor: pointer;
+}
+
+.quiz-result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+
+
+.quiz-container {
+    max-width: 450px;
+}
+
+.questions {
+    border-bottom: 0.79px solid #DBDEF0;
+    padding: 1.5em 2em;
+}
+
+.question-asked{
+    margin-bottom: .8em;
+}
+
+.answer-choices { 
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.answ-box {
+    border: .77px solid #4D5B9E;
+    border-radius: 7.71px;
+    padding: .1em 1em;
+    cursor: pointer;
+    margin: 2em 1em 2em 0;
+    margin-left: 1em;
+}
+
+.selected-answer {
+    background: #D6DBF5;
+}
+
+.correct-answer {
+    background: #94D7A2;
+}
+
+.incorrect-answer{ 
+    background: #F8BCBC;
+}
+
+.again-check {
+    border: .77px solid #4D5B9E;
+    border-radius: 7.71px;
+    padding: 1em 2em;
+    background: #4D5B9E;
+    color: white;
+    cursor: pointer;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    margin-left: 2em;
+}
+
