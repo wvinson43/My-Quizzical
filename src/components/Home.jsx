@@ -6,8 +6,8 @@ export default function Home({ startQuiz}) {
         <div>
             <div className="yellow-blob"></div>
             <div className="quiz-intro">
-                <h1>Test Your Greek Mythology</h1>
-                <h2>Test Mythologia Graeca Tua</h2>
+                <h1 className="quiz-title">Test Your Greek Mythology</h1>
+                <h2 className="quiz-title-two">Test Mythologia Graeca Tua</h2>
                 <h4 className="quiz-description">Come show off your brain power!</h4>
                 <button
                     className="quiz-begin"
