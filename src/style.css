@@ -52,6 +52,22 @@ body {
     /* gap: 1em; */
 }
 
+.quiz-description{
+   
+}
+
+.quiz-title {
+    color: green;
+}
+
+.quiz-title-two {
+    color: blue;
+}
+
+.quiz-description{
+   color: red;
+}
+
 .quiz-begin {
     background: #4D5B9E;
     border-radius: 15px;
