@@ -6,6 +6,9 @@
 
 body {
     background: #F5F7FB;
+    background-image: url("https://images.rawpixel.com/image_400/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQyMS0xOTM5LTkwMC1qai5qcGc.jpg");
+    background-size: cover;
+    background-position: center;
     color: #293264;
     min-height: 100vh;
     height: 100%;
@@ -30,42 +33,158 @@ body {
     right: 0;
     transform: translate(50%, -50%);
     z-index: -1;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.yellow-blob span:nth-child(1) {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid lightcoral;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: rotate-blob 5s linear infinite;
 
+}
+
+.yellow-blob:hover span:nth-child(1) {
+    background: #d76bb1;
+    border: none;
+}
+
+.yellow-blob span:nth-child(2) {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid lightseagreen;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: rotate-blob 4s linear infinite;
+  }
+
+.yellow-blob:hover span:nth-child(2) {
+    background: #f192d0;
+    border: none;
+  }
+  
+.yellow-blob span:nth-child(3) {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid purple;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: rotate-blob2 10s linear infinite;
+  }
+
+.yellow-blob:hover span:nth-child(3) {
+    background: #f06ec294;
+    border: none;
+  }
 
 .blue-blob{
     padding: 8rem;
     border-radius: 61% 51% 29% 71% / 30% 63% 47% 70%;
-    background-color: lightblue;
+    background-color: purple;
     position: fixed;
     bottom: 0;
     left: 0;
     transform: translate(-50%, 50%);
     z-index: -1;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.blue-blob span:nth-child(1) {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid green;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: rotate-blob3 5s linear infinite;
+}
+
+.blue-blob:hover span:nth-child(1) {
+    background: #d76bb1;
+    border: none;
+  }
+
+.blue-blob span:nth-child(2) {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid orange;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: rotate-blob3 4s linear infinite;
+  }
+
+.blue-blob:hover span:nth-child(2) {
+    background: #f192d0;
+    border: none;
+  }
+
+.blue-blob span:nth-child(3) {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid blue;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: rotate-blob4 10s linear infinite;
+  }
+
+.blue-blob:hover span:nth-child(3) {
+    background: #f06ec294;
+    border: none;
+  }
+
 .quiz-intro{
-    margin-top: 5em;
+    margin-top: 5em; /* 5em; */
      /* justify-content: center; */
     text-align: center;
     /* gap: 1em; */
 }
 
-.quiz-description{
-   
-}
-
 .quiz-title {
     color: green;
+    margin-bottom: 2em;
+    text-shadow: 3px 2px 3px #CE5937;
+    font-size: 2rem;
 }
 
 .quiz-title-two {
     color: blue;
+    margin-bottom: 1.8em;
+    text-shadow: 3px 2px 3px #CE5937;
+    font-size: 1.8rem;
 }
 
 .quiz-description{
    color: red;
+   margin-bottom: 1.3em;
+   text-shadow: 3px 2px 3px #CE5937;
+   font-size: 1.3rem;
 }
 
 .quiz-begin {
@@ -73,8 +192,15 @@ body {
     border-radius: 15px;
     color: #F5F7FB;
     padding: 1em 2em;
-    margin: 1em auto;
+    margin: 0.75em auto;
     cursor: pointer;
+    text-shadow: 2px 2px 2px #CE5937;
+    font-size: 1.2rem;
+}
+
+.quiz-begin:hover,
+.quiz-begin:focus{
+    transform: scale(1.06);
 }
 
 .quiz-result{
@@ -142,3 +268,117 @@ body {
     margin-left: 2em;
 }
 
+
+@media (min-width: 300px) {  
+    .quiz-intro{
+        margin-top: 8em; /* 5em; */
+         /* justify-content: center; */
+        text-align: center;
+        /* gap: 1em; */
+    }
+}
+
+@media (min-width: 370px) { 
+    .quiz-intro{
+        margin-top: 5em; /* 5em; */
+         /* justify-content: center; */
+        text-align: center;
+        /* gap: 1em; */
+    }
+}
+
+@media (min-width: 390px) { 
+    .quiz-intro{
+            margin-top: 6.8em; /* 5em; */
+             /* justify-content: center; */
+            text-align: center;
+            /* gap: 1em; */
+    }        
+}
+
+@media (min-width: 400px) {  
+    .quiz-intro{
+        margin-top: 7.5em; /* 5em; */
+         /* justify-content: center; */
+        text-align: center;
+        /* gap: 1em; */
+    }
+}
+
+
+@media (min-width: 626px) {  
+    .quiz-intro{
+        margin-top: 10em; /* 5em; */
+         /* justify-content: center; */
+        text-align: center;
+        /* gap: 1em; */
+    }
+}
+    
+@media (min-width: 1000px) {  
+    .quiz-intro{
+            margin-top: 5em; /* 5em; */
+             /* justify-content: center; */
+            text-align: center;
+            /* gap: 1em; */
+    }
+}
+
+@media (min-width: 1200px) {  
+    .quiz-intro{
+            margin-top: 9.25em; /* 5em; */
+             /* justify-content: center; */
+            text-align: center;
+            /* gap: 1em; */
+    }
+}
+
+     
+@media (max-width: 625px) { 
+    .quiz-intro{
+        margin-top: 5em; /* 5em; */
+         /* justify-content: center; */
+        text-align: center;
+        /* gap: 1em; */
+    }
+}
+
+@keyframes rotate-blob {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes rotate-blob2 {
+    0% {
+      transform: rotate(360deg);
+    }
+  
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  @keyframes rotate-blob3 {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes rotate-blob4 {
+    0% {
+      transform: rotate(360deg);
+    }
+  
+    100% {
+      transform: rotate(0deg);
+    }
+  }
