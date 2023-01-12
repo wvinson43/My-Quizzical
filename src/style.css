@@ -6,9 +6,10 @@
 
 body {
     background: #F5F7FB;
-    background-image: url("https://images.rawpixel.com/image_400/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQyMS0xOTM5LTkwMC1qai5qcGc.jpg");
-    background-size: cover;
+    background-image: url("https://media.discordapp.net/attachments/996416617296695418/1060968405064224860/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQyMS0xOTM5LTkwMC1qai5qcGc.jpg?width=700&height=492");
+    background-size: 100%;
     background-position: center;
+    background-repeat: no-repeat;
     color: #293264;
     min-height: 100vh;
     height: 100%;
